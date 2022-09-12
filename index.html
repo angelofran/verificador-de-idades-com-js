@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas em Javascript</title>
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+        body {
+            background-color: aqua;
+            font-family: 'Fira Code', monospace;
+            text-align: center;
+            margin-top: 10%;
+            color: black;
+        }
+        #area{
+            background-color: white;
+            width: 500px;
+            border-radius: 5%;
+            margin: auto;
+            padding: 15px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+        }
+        button{
+            border: none;
+            width: 80px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: rgb(44, 74, 243);
+            color: rgb(255, 248, 248);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(7, 218, 255);
+            color: rgb(255, 255, 255);
+            transition:  0.3s;
+            height: 40px;
+        }
+        #input{
+            border: 2px solid rgba(0, 0, 0, 0.281);
+            border-radius: 5px;
+            width: 189px;
+        }
+        #input::placeholder{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idades</h1>
+    </header>
+   <section id="area">
+    <div>
+        <label for="input">Ano de nascimento: </label><input type="text" placeholder="Digite o seu ano de nascimento." id="input" name="input">
+        <br>
+        <p>Sexo:
+        <input type="radio" name="radio1" id="radio_1" checked> <label for="radio1">Masculino</label>
+        <input type="radio" name="radio1" id="radio_2"> <label for="radio2">Femenino</label>
+        </p>
+        <button onclick="clicou()">Enviar</button>
+    </div>
+    <div id="res">
+       <p name="paragrafo">Complete para ver o resultado.</p>
+    </div>
+   </section>
+    <footer>
+            <p>&copy;angelofran</p>
+    </footer>
+</body>
+</html>
